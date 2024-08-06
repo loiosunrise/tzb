@@ -9,6 +9,12 @@ RUN apt-get install -y --no-install-recommends libjpeg-dev
 RUN apt-get install -y --no-install-recommends libpng-dev
 RUN apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get install -y --no-install-recommends cmake
+RUN apt-get install -y --no-install-recommends libgl1-mesa-glx
+RUN apt-get install -y --no-install-recommends libsm6
+RUN apt-get install -y --no-install-recommends libxext6
+RUN apt-get install -y --no-install-recommends libxrender-dev
+RUN apt-get install -y --no-install-recommends libgl1-mesa-dev
+RUN apt-get install -y --no-install-recommends libglib2.0-0
 RUN rm -rf /var/lib/apt/lists/*
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir fairscale sentencepiece pillow opencv-python-headless gradio tqdm timm openai-clip pyyaml chardet ultralytics
