@@ -1,0 +1,10 @@
+ARG TAG
+FROM tzb-base:${TAG}
+
+WORKDIR /workspace
+
+COPY ./clip /workspace
+COPY ./yolov8n-obb.pt /workspace
+COPY ./llama_model_weights /workspace
+COPY ./re-fine-tuning-model /workspace
+COPY ./util /workspace
