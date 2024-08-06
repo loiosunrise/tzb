@@ -1,9 +1,9 @@
 ARG TAG
 FROM registry.cn-hangzhou.aliyuncs.com/tzb-sincos/tzb-test:${TAG}
 
-WORKDIR /workspace
-COPY ./llama /workspace
-COPY ./run.py /workspace
+
+COPY ./llama/ /workspace/llama
+COPY ./run.py /workspace/run.py
 
 
 RUN mkdir /output_path
