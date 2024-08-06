@@ -1,7 +1,7 @@
 ARG TAG
 FROM tzb-test:${TAG}
 
-WORKDIR /workspace
+ENV CUDA_VISIBLE_DEVICES=0
 COPY ./llama/ /workspace/llama
 COPY ./run.py /workspace/run.py
 
