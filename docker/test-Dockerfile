@@ -3,8 +3,8 @@ FROM tzb-base:${TAG}
 
 WORKDIR /workspace
 
-COPY ./clip/ /workspace/clip
-COPY ./yolov8n-obb.pt /workspace/yolov8n-obb.pt
-COPY ./llama_model_weights/ /workspace/llama_model_weights
 COPY ./re-fine-tuning-model/ /workspace/re-fine-tuning-model
+COPY ./clip/ /workspace/clip
+COPY ./llama_model_weights/ /workspace/llama_model_weights
 COPY ./util/ /workspace/util
+COPY ./yolov8n-obb.pt /workspace/yolov8n-obb.pt

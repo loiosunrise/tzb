@@ -1,9 +1,8 @@
-FROM cnstark/pytorch:2.0.0-py3.9.12-cuda11.7.1-devel-ubuntu20.04
+FROM cnstark/pytorch:2.0.0-py3.9.12-cuda11.7.1-ubuntu20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
-
 RUN apt-get install -y --no-install-recommends build-essential
 RUN apt-get install -y --no-install-recommends curl
 RUN apt-get install -y --no-install-recommends libjpeg-dev
